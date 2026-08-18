@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DPI"
+version = "1.0.0"
+description = "Official implementation of the ICLR 2026 paper Learning What Matters Now: Dynamic Preference Inference under Contextual Shifts."
+requires-python = ">=3.10"
+dependencies = [
+    "tqdm",
+    "ipykernel",
+    "matplotlib",
+    "gymnasium",
+    "mo-gymnasium",
+    "numpy",
+    "scipy",
+    "torch"
+]
+license = {text = "MIT"}
+authors = [{name = "Xianwei Cao", email = "xianweicao@stu.xidian.edu.cn"}]
+maintainers = [{name = "Xianwei Cao", email = "xianweicao@stu.xidian.edu.cn"}]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
